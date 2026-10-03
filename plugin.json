@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "suprsend",
+  "version": "1.0.0",
+  "description": "SuprSend for AI agents: the hosted SuprSend MCP server (users, preferences, tenants, lists, workflows, templates, events, delivery data) and a skill that guides the agent through it.",
+  "author": {
+    "name": "SuprSend",
+    "email": "support@suprsend.com",
+    "url": "https://suprsend.com"
+  },
+  "homepage": "https://github.com/suprsend/agent-plugin",
+  "repository": "https://github.com/suprsend/agent-plugin",
+  "license": "MIT",
+  "keywords": ["suprsend", "notifications", "workflows", "templates", "mcp"]
+}

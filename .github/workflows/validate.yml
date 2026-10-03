@@ -1,0 +1,21 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: JSON files parse
+        run: for f in plugin.json mcp.json .agents/plugins/marketplace.json; do jq empty "$f"; done
+      - name: Agent Plugins schemas
+        run: npm install --no-save ajv@8 ajv-formats@3 && node scripts/validate.mjs
+      - name: The skill has frontmatter with its folder name
+        run: head -3 skills/suprsend/SKILL.md | grep -qx 'name: suprsend'
