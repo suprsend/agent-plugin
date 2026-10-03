@@ -18,4 +18,5 @@ jobs:
       - name: Agent Plugins schemas
         run: npm install --no-save ajv@8 ajv-formats@3 && node scripts/validate.mjs
       - name: The skill has frontmatter with its folder name
-        run: head -3 skills/suprsend/SKILL.md | grep -qx 'name: suprsend'
+        run: |
+          head -3 skills/suprsend/SKILL.md | grep -qx 'name: suprsend'
