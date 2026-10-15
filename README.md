@@ -1,3 +1,5 @@
+<img src="assets/logo.png" alt="SuprSend logo" width="96" height="96">
+
 # SuprSend agent plugin
 
 The official [SuprSend](https://suprsend.com) plugin in the open [Agent Plugins](https://agent-plugins.org) format, for VS Code, GitHub Copilot, Cursor, ChatGPT and Codex, Kiro, and the other [compatible clients](https://agent-plugins.org/compatible-clients). It connects the agent to the **hosted SuprSend MCP server** and adds a skill that tells the agent how to use it. The agent can then work with your SuprSend account: users and their preferences, tenants, objects, subscriber lists, workflows, templates, events, and delivery data.
@@ -48,6 +50,7 @@ To fix one workspace or a set of tools, add the server with a custom URL instead
 
 - Docs: https://docs.suprsend.com
 - Email: support@suprsend.com
+- Privacy policy: https://www.suprsend.com/privacy
 - Security: see [SECURITY.md](SECURITY.md)
 
 ## License
